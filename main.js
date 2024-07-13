@@ -1,5 +1,8 @@
+noseX=0
+noseY=0
+
 function preload(){
-  
+ mustache_pic = loadImage("https://www.freeiconspng.com/thumbs/mustache-png/mustache-by-hurricamo-on-deviantart-10.png") 
 }
 function setup(){
   canvas = createCanvas(300,300)
@@ -23,6 +26,7 @@ function gotPoses(results){
 }
 function draw(){
   image(video, 0, 0, 300, 300)
+  image(mustache_pic, noseX, noseY, 30, 30)
 }
 function click_pic(){
   save("funnyFacez.png")
